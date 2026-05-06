@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* EMERGENCY BANNER */
+.emergency-banner {
+  background: #d93025;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}
+
+/* HEADER */
+header {
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  background: rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #1a73e8;
+  border-radius: 25px;
+  outline: none;
+}
+
+/* SECTION */
+.section {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 8px;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: 2px solid #1a73e8;
+  background: white;
+  color: #1a73e8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: #1a73e8;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #1a73e8;
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  color: #1a73e8;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 4px 4px 4px 0;
+}
+
+.badge-govt {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-pvt {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-call {
+  flex: 1;
+  padding: 8px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-map {
+  flex: 1;
+  padding: 8px;
+  background: #0f9d58;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-call:hover { background: #1557b0; }
+.btn-map:hover { background: #0b7a45; }
+
+/* DOCTORS LIST */
+.doctors-list {
+  margin-top: 12px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.doctors-list p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.doctor-item {
+  font-size: 0.85rem;
+  color: #444;
+  padding: 3px 0;
+}
+
+/* MAP */
+#map {
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* SCROLL TO TOP */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.scroll-top:hover {
+  background: #1557b0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a73e8;
+  color: white;
+  margin-top: 40px;
+}
